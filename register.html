@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,4 +47,54 @@
   </footer>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register/Login</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h2>Register/Login</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="register.html">Register/Login</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="auth-section">
+      <h3>Create an Account</h3>
+      <form onsubmit="return validateRegister()">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <input type="password" id="pass" placeholder="Password" required>
+        <input type="password" id="confirm" placeholder="Confirm Password" required>
+        <button type="submit">Register</button>
+      </form>
+    </section>
+
+    <section class="auth-section">
+      <h3 style="text-align:center;">Login</h3>
+      <form onsubmit="return validateLogin()">
+        <input type="email" id="loginEmail" placeholder="Email Address" required>
+        <input type="password" id="loginPass" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 CBIT</p>
+  </footer>
+
+</body>
+>>>>>>> ee885f4564079ae5f61e5efad69631ce492231a6
 </html>
