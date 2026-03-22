@@ -1,0 +1,8 @@
+<courses>
+  <course>
+    <title>Web Development</title>
+    <instructor>Sai</instructor>
+    <price>999</price>
+    <duration>40</duration>
+  </course>
+</courses>
