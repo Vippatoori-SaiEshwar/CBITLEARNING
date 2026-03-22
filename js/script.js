@@ -45,7 +45,7 @@ function loadCourse() {
   let p = new URLSearchParams(window.location.search);
   let c = p.get("course");
 
-  let data = "";
+  let data = "<p>Course not found. Please select a valid course from the courses page.</p>";
 
   if (c === "web") {
     data = `
@@ -73,3 +73,10 @@ function loadCourse() {
 
   document.getElementById("details").innerHTML = data;
 }
+
+// Wait for the DOM to load before running scripts
+document.addEventListener("DOMContentLoaded", () => {
+  if (document.getElementById("details")) {
+    loadCourse();
+  }
+});
